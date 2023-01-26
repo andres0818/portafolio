@@ -3,6 +3,7 @@
     display: flex;
     width: 100%;
     height: 60vh;
+    overflow: hidden;
 
     &__img {
         width: 100%;
@@ -11,22 +12,56 @@
 
 
     &__link {
+        position: relative;
         width: 0;
         flex-grow: 1;
         object-fit: cover;
         opacity: .8;
         transition: .5s ease;
 
-     
+
+
 
         &:hover {
             width: 400px;
             opacity: 1;
-            filter: contrast(120%);
+
+            &::before {
+                content: "";
+
+                background-color: gray;
+                width: 80%;
+                height: 5%;
+                position: absolute;
+                bottom: 0;
+                padding: 10% 10%;
+                font-weight: bold;
+                color: white;
+                font-size: 30px;
+            }
         }
     }
 
+}
 
 
 
+.uno:hover::before {
+    content: "Repositorio donde se alojan todos los  proyectos que he realizado";
+}
+
+.dos:hover::before {
+    content: 'Aplicacion web donde se simula un chat entre dos personas usuario: 300  password: 1111 || 305 password: 0000';
+}
+
+.tres:hover::before{
+    content:'Ecomer donde se practica el uso de react hook';
+}
+
+.cuatro:hover::before{
+    content: 'Validacion de usuarios con firebase';
+}
+
+.cinco:hover::before{
+    content: 'Lista de tareas con tema claro y tema oscuro';
 }
