@@ -10,11 +10,11 @@ import Proyectos from './pages/Proyectos/Proyectos'
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Cabecera />} >
-        <Route path="/" element={<Home />} />
-        <Route path="/conocimientos" element={<Conocimientos />} />
-        <Route path="/proyectos" element={<Proyectos />} />
-        <Route path='*' element={<h1>Ruta no encontrada</h1>} />
+      <Route path="/portafolio" element={<Cabecera />} >
+        <Route path="/portafolio" element={<Home />} />
+        <Route path="/portafolio/conocimientos" element={<Conocimientos />} />
+        <Route path="/portafolio/proyectos" element={<Proyectos />} />
+        <Route path='*' element={<Home/>} />
       </Route>
     </Routes>
   )

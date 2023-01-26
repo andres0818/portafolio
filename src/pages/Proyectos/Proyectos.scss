@@ -5,9 +5,19 @@
     height: 60vh;
     overflow: hidden;
 
+    @media(max-width:414px) {
+        display: block;
+        height: auto;
+        flex-direction: column;
+    }
+
     &__img {
         width: 100%;
         height: 100%;
+
+        @media(max-width:414px) {
+            box-shadow:  0 0 12px 1px gray;
+        }
     }
 
 
@@ -16,15 +26,11 @@
         width: 0;
         flex-grow: 1;
         object-fit: cover;
-        opacity: .8;
         transition: .5s ease;
-
-
 
 
         &:hover {
             width: 400px;
-            opacity: 1;
 
             &::before {
                 content: "";
@@ -40,6 +46,8 @@
                 font-size: 30px;
             }
         }
+
+
     }
 
 }
@@ -54,14 +62,14 @@
     content: 'Aplicacion web donde se simula un chat entre dos personas usuario: 300  password: 1111 || 305 password: 0000';
 }
 
-.tres:hover::before{
-    content:'Ecomer donde se practica el uso de react hook';
+.tres:hover::before {
+    content: 'Ecomer donde se practica el uso de react hook';
 }
 
-.cuatro:hover::before{
+.cuatro:hover::before {
     content: 'Validacion de usuarios con firebase';
 }
 
-.cinco:hover::before{
+.cinco:hover::before {
     content: 'Lista de tareas con tema claro y tema oscuro';
 }
