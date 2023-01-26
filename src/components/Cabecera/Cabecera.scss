@@ -1,0 +1,22 @@
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-image: linear-gradient(rgb(92, 92, 100), black);
+    align-items: center;
+    height: 70px;
+
+    @media (max-width:395px) {
+        justify-content: center;
+    }
+
+    &__titulo {
+
+        color: white;
+
+        @media (max-width:395px) {
+            display: none;
+        }
+
+    }
+}

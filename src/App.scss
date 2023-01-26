@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: sans-serif;
+
+    @media (max-width:395px){
+        width: 510px;
+    }
+}
