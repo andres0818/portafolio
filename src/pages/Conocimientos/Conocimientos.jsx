@@ -12,7 +12,6 @@ const Conocimientos = () => {
 
   return (
     <div className='conocimientos'>
-      <h1 className='conocimientos__titulo'>Herramintas y lenguajes</h1>
       <div className='conocimientos__contenedor'>
         {conociminetos.map((e) => {
           return (
@@ -29,7 +28,6 @@ const Conocimientos = () => {
 
       </div>
       <ul className='conocimientos__carta conocimientos__framework'>
-       
         <li><img src={react} alt="" /></li>
         <li><img src={sass} alt="" /></li>
         <li><img src={bootstrap} alt="" /></li>
