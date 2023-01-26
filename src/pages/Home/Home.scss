@@ -6,8 +6,9 @@
     width: 100%;
     height: 60vh;
 
-    @media(max-width:395px) {
+    @media(max-width:414px) {
         flex-direction: column;
+        height: 90vh;
     }
 
     &__foto {
@@ -23,11 +24,19 @@
     &__contenido {
         color: white;
 
-        @media(max-width: 395px) {
+        @media(max-width: 414px) {
 
             padding: 0px 30px;
+            margin-bottom: 5px;
 
         }
+    }
 
+    &__titulo {
+        font-size: 60px;
+    }
+
+    &__subtitulo {
+        font-size: 35px;
     }
 }

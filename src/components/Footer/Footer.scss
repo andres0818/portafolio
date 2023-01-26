@@ -1,0 +1,18 @@
+.footer{
+    background-color: black;
+    height: 32.9vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width:414px){
+
+        height: 35vh;
+    }
+
+    &__titulo{
+        margin: 20px;
+        color: white;
+    }
+}

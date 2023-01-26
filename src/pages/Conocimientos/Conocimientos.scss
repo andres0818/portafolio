@@ -1,0 +1,49 @@
+.conocimientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(74, 75, 80);
+
+    padding: 2%;
+    color: white;
+
+ 
+    &__contenedor {
+        margin: 2% 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 150px;
+        
+        @media(max-width: 414px) {
+            flex-direction: column;
+            gap: 60px;
+            margin-top: 10%;
+        }
+    }
+    
+    &__carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background-color: rgb(143, 143, 143);
+        padding: 15px;
+        border-radius: 18px;
+        box-shadow:  0 0 12px 0px rgb(212, 210, 210);
+    }
+
+    &__logo{
+       margin: 0 0 12px 0;
+        width: 128px;
+    }
+
+
+    &__framework{
+        display: flex;
+        margin-top: 15px;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
