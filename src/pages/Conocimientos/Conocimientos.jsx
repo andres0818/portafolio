@@ -5,9 +5,9 @@ import './Conocimientos.scss'
 const Conocimientos = () => {
 
   const conociminetos = [
-    { name: html, lista: ['Partes de una pagina', 'Titulos', 'Listas', 'Tablas', 'Enlaces', 'Atributos y estilos'] },
-    { name: javascript, lista: ['Operadores aritmeticos', 'Condicionales', 'Arrays', 'Manipulacion del DO'] },
-    { name: css, lista: ['Diseños responsivos', 'Selectores', 'Estilos tipograficos', 'Pseudo-clases', 'Bacground', 'Degradados', 'Posicionamientos', 'animaciones basicas'] }
+    { name: html, lista: ['Partes de una página', 'Titulos', 'Listas', 'Tablas', 'Enlaces', 'Atributos y estilos'] },
+    { name: javascript, lista: ['Operadores aritméticos', 'Condicionales', 'Arrays', 'Manipulacion del DOM'] },
+    { name: css, lista: ['Diseños responsivos', 'Selectores', 'Estilos tipográficos', 'Pseudo-clases', 'Background', 'Degradados', 'Posicionamientos', 'Animaciones basicas'] }
   ]
 
   return (
