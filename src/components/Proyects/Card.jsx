@@ -6,7 +6,7 @@ const Card = ({ data }) => {
 
   const [imageWeb, setImageWeb] = useState({ img: images[0], index: 0 });
 
-  const addImg = () => {
+  const nextImg = () => {
     imageWeb.index === images.length - 1
       ? setImageWeb({ img: images[0], index: 0 })
       : setImageWeb({
@@ -15,7 +15,7 @@ const Card = ({ data }) => {
         });
   };
 
-  const subImg = () => {
+  const returnImg = () => {
     imageWeb.index === 0
       ? setImageWeb({ img: images[2], index: 2 })
       : setImageWeb({
@@ -23,7 +23,14 @@ const Card = ({ data }) => {
           index: imageWeb.index - 1,
         });
   };
-  
+
+  const onclickImg = (img, index) => {
+    setImageWeb({
+      img: img[index],
+      index,
+    });
+  };
+
   return (
     <div
       className={
@@ -50,7 +57,7 @@ const Card = ({ data }) => {
       </div>
       <div className="proyects__container_images">
         <div className="proyects__btn_images_container">
-          <button onClick={subImg} className="proyects__btn_images">
+          <button onClick={returnImg} className="proyects__btn_images">
             {"<"}
           </button>
           <img
@@ -58,22 +65,25 @@ const Card = ({ data }) => {
             src={imageWeb.img}
             alt="Portada"
           />
-          <button onClick={addImg} className="proyects__btn_images">
+          <button onClick={nextImg} className="proyects__btn_images">
             {">"}
           </button>
         </div>
         <div className="proyects__images_secundary">
           <img
+            onClick={() => onclickImg(images, 0)}
             className={imageWeb.img === images[0] ? "focus" : "opacity"}
             src={images[0]}
             alt="Miniatura"
           />
           <img
+            onClick={() => onclickImg(images, 1)}
             className={imageWeb.img === images[1] ? "focus" : "opacity"}
             src={images[1]}
             alt="Miniatura"
           />
           <img
+            onClick={() => onclickImg(images, 2)}
             className={imageWeb.img === images[2] ? "focus" : "opacity"}
             src={images[2]}
             alt="Miniatura"
