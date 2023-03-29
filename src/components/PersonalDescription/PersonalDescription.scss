@@ -3,6 +3,7 @@
 
 
 .personalDescription {
+    background: $background;
     font-family: $font_family_bold;
     height: 100vh;
     display: flex;
@@ -12,7 +13,7 @@
     padding: 1%;
 
     @media(max-width:900px) {
-        overflow-y: scroll;
+        height: auto;
     }
 
     &__info {
@@ -67,6 +68,11 @@
     &__description {
         text-align: justify;
         font-size: 24px;
+
+        &:nth-last-child(2) {
+            margin-bottom: 30px;
+        }
+
 
         @media(max-width:900px) {
             font-size: 20px;
