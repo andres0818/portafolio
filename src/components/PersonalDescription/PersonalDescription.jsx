@@ -7,11 +7,13 @@ const PersonalDescription = () => {
     <div className="personalDescription ">
       <div className="personalDescription__info">
         <h1 className="personalDescription__title">Hola! soy Andrés Pérez</h1>
-        <h2 className="personalDescription__subTitle">Desarrollador Front-End</h2>
+        <h2 className="personalDescription__subTitle">
+          Desarrollador Front-End
+        </h2>
         <p className="personalDescription__description">
-          Soy un programador apasionado y comprometido que busca constantemente nuevos
-          desafíos en mi carrera. Me encanta resolver problemas complejos y
-          siempre estoy buscando maneras de mejorar mis habilidades y
+          Soy un programador apasionado y comprometido que busca constantemente
+          nuevos desafíos en mi carrera. Me encanta resolver problemas complejos
+          y siempre estoy buscando maneras de mejorar mis habilidades y
           conocimientos en el campo de la tecnología.
         </p>
         <p className="personalDescription__description">
@@ -20,7 +22,14 @@ const PersonalDescription = () => {
           de la caja. Creo que esto se refleja en mi enfoque innovador y único
           para resolver problemas en el desarrollo web.
         </p>
-        <button className="btn personalDescription__moreInfoBtn">Más info</button>
+        <a
+          href="https://www.linkedin.com/in/andres-perez0818/"
+          target="_blank"
+          rel="noreferrer"
+          className="btn personalDescription__moreInfoBtn"
+        >
+          Contacto
+        </a>
       </div>
       <img
         name="hola"
