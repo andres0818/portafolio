@@ -4,12 +4,12 @@ import "./PersonalDescription.scss";
 
 const PersonalDescription = () => {
   return (
-    <div className="personalDescription bg-dark">
+    <div className="personalDescription ">
       <div className="personalDescription__info">
         <h1 className="personalDescription__title">Hola! soy Andrés Pérez</h1>
         <h2 className="personalDescription__subTitle">Desarrollador Front-End</h2>
         <p className="personalDescription__description">
-          Soy una web apasionada y comprometida que busca constantemente nuevos
+          Soy un programador apasionado y comprometido que busca constantemente nuevos
           desafíos en mi carrera. Me encanta resolver problemas complejos y
           siempre estoy buscando maneras de mejorar mis habilidades y
           conocimientos en el campo de la tecnología.
