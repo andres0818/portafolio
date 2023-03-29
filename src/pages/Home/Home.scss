@@ -1,0 +1,77 @@
+@import '../../variants.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.home {
+    font-family: $font_family_bold;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding: 1%;
+
+    @media(max-width:900px) {
+        overflow-y: scroll;
+    }
+
+    &__info {
+        width: 40%;
+        color: white;
+
+        @media(max-width:900px) {
+            width: 90%;
+        }
+    }
+
+    &__title {
+        font-size: 64px;
+
+        @media(max-width:900px) {
+            font-size: 34px;
+        }
+    }
+
+    &__subTitle {
+        font-size: 44px;
+        margin-bottom: 30px;
+
+        @media(max-width:900px) {
+            font-size: 30px;
+        }
+    }
+
+    &__moreInfoBtn {
+
+        font-size: 24px;
+        font-weight: bold;
+        background-image: linear-gradient(-90deg, $red_primary, $purple_primary);
+        border: none;
+        border-radius: 20px;
+        padding: 5px 12px;
+    }
+
+    &__pictureProfile {
+        width: 25%;
+        border-radius: 50px;
+        box-shadow: 0 0 20px 15px $purple_primary;
+
+        @media(max-width:900px) {
+            width: 70%;
+            margin: 50px;
+            box-shadow: 0 0 20px 5px $purple_primary;
+        }
+
+    }
+
+    &__description {
+        text-align: justify;
+        font-size: 24px;
+
+        @media(max-width:900px) {
+            font-size: 20px;
+        }
+
+    }
+
+}
