@@ -23,7 +23,7 @@ const Card = ({ data }) => {
           index: imageWeb.index - 1,
         });
   };
-
+  
   return (
     <div
       className={
@@ -41,6 +41,12 @@ const Card = ({ data }) => {
             <img src={logos.bootstrap} alt="" />
           </>
         )}
+
+        <div className="proyects__btn_redirect">
+          <a href={data.url} target="_blank" rel="noreferrer">
+            {!data.mobile ? "Ir a la pagina" : "Ir al repositorio"}
+          </a>
+        </div>
       </div>
       <div className="proyects__container_images">
         <div className="proyects__btn_images_container">
