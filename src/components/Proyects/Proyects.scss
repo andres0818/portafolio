@@ -91,10 +91,11 @@
             border-radius: 30px;
             width: 150px;
             height: 150px;
+
             @media(max-width:500px) {
                 width: 100px;
                 height: 100px;
-    
+
             }
         }
     }
@@ -112,4 +113,12 @@
     @media(max-width: 500px) {
         flex-direction: column-reverse;
     }
+}
+
+.focus {
+    box-shadow: 0 0 20px 8px $purple_primary;
+}
+
+.opacity {
+    opacity: .5;
 }

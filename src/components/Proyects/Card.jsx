@@ -53,9 +53,21 @@ const Card = ({ data, reverse = false }) => {
           </button>
         </div>
         <div className="proyects__images_secundary">
-          <img src={images[0]} alt="Miniatura" />
-          <img src={images[1]} alt="Miniatura" />
-          <img src={images[2]} alt="Miniatura" />
+          <img
+            className={imageWeb.img === images[0] ? "focus" : "opacity"}
+            src={images[0]}
+            alt="Miniatura"
+          />
+          <img
+            className={imageWeb.img === images[1] ? "focus" : "opacity"}
+            src={images[1]}
+            alt="Miniatura"
+          />
+          <img
+            className={imageWeb.img === images[2] ? "focus" : "opacity"}
+            src={images[2]}
+            alt="Miniatura"
+          />
         </div>
       </div>
     </div>
