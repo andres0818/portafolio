@@ -12,9 +12,9 @@ export const pages = [
       dos: filtrado,
       tres: perfil,
     },
-    ulr: "https://makaia-libreria.web.app/",
+    url: "https://makaia-libreria.web.app/",
     status: false,
-    mobile:false,
+    mobile: false,
   },
   {
     name: "TODO",
@@ -25,10 +25,9 @@ export const pages = [
       dos: light,
       tres: filter,
     },
-    ulr: "https://andres0818.github.io/todo-sprint-2/",
+    url: "https://andres0818.github.io/todo-sprint-2/",
     status: true,
-    mobile:false,
-
+    mobile: false,
   },
   {
     name: "Pokedex",
@@ -39,7 +38,8 @@ export const pages = [
       dos: detailsBlue,
       tres: detailsRed,
     },
+    url: "https://github.com/andres0818/pokedex-reactNative",
     status: false,
-    mobile:true,
+    mobile: true,
   },
 ];
