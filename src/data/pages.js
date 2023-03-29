@@ -10,5 +10,6 @@ export const pages = {
       dos: filtrado,
       tres: perfil,
     },
+    ulr: "https://makaia-libreria.web.app/",
   },
 };
