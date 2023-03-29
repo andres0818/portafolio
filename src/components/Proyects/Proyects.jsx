@@ -6,7 +6,7 @@ const Proyects = ({data,reverse=false}) => {
   return (
     <div className="proyects">
       <h1 className="proyects__title">Algunos proyectos</h1>
-      <Card reverse={reverse} data={data} />
+      <Card  data={data} />
     </div>
   );
 };

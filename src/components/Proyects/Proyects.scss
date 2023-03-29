@@ -24,7 +24,6 @@
         display: flex;
         align-items: center;
         gap: 30px;
-        flex-direction: row-reverse;
         padding: 5%;
 
     }
@@ -104,12 +103,15 @@
 
 .column {
     @media(max-width: 500px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
+
     }
 }
 
 
 .column_reverse {
+    flex-direction: row-reverse;
+
     @media(max-width: 500px) {
         flex-direction: column-reverse;
     }

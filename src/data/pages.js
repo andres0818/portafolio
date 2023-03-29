@@ -1,5 +1,5 @@
 import { filtrado, perfil, portada } from "./img/libreria";
-import { dark, filter, light } from "./img/libreria/todo";
+import { dark, filter, light } from "./img/todo";
 
 export const pages = [
   {
@@ -12,6 +12,7 @@ export const pages = [
       tres: perfil,
     },
     ulr: "https://makaia-libreria.web.app/",
+    status:false,
   },
   {
     name: "TODO",
@@ -23,5 +24,6 @@ export const pages = [
       tres: filter,
     },
     ulr: "https://andres0818.github.io/todo-sprint-2/",
+    status:true,
   },
 ];

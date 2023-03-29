@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import * as logos from "../../img";
 
-const Card = ({ data, reverse}) => {
-
+const Card = ({ data }) => {
   const images = [data.fotos.uno, data.fotos.dos, data.fotos.tres];
 
   const [imageWeb, setImageWeb] = useState({ img: images[0], index: 0 });
@@ -28,7 +27,7 @@ const Card = ({ data, reverse}) => {
   return (
     <div
       className={
-        "proyects__container " + (!reverse ? "column_reverse" : "column")
+        "proyects__container " + (!data.status ? "column_reverse" : "column")
       }
     >
       <div className="proyects__info">
