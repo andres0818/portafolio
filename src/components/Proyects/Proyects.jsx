@@ -8,7 +8,7 @@ const Proyects = () => {
     <div className="proyects">
       <h1 className="proyects__title">Algunos proyectos</h1>
       {pages.map((page, index) => (
-        <Card data={page} />
+        <Card key={index} data={page} />
       ))}
     </div>
   );
