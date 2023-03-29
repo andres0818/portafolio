@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import * as logos from "../../img";
 
-const Card = ({ data, reverse = false }) => {
+const Card = ({ data, reverse}) => {
+
   const images = [data.fotos.uno, data.fotos.dos, data.fotos.tres];
 
   const [imageWeb, setImageWeb] = useState({ img: images[0], index: 0 });
