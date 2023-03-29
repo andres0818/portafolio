@@ -1,4 +1,5 @@
 import { filtrado, perfil, portada } from "./img/libreria";
+import { cards, detailsBlue, detailsRed } from "./img/pokedex";
 import { dark, filter, light } from "./img/todo";
 
 export const pages = [
@@ -12,7 +13,8 @@ export const pages = [
       tres: perfil,
     },
     ulr: "https://makaia-libreria.web.app/",
-    status:false,
+    status: false,
+    mobile:false,
   },
   {
     name: "TODO",
@@ -24,6 +26,20 @@ export const pages = [
       tres: filter,
     },
     ulr: "https://andres0818.github.io/todo-sprint-2/",
-    status:true,
+    status: true,
+    mobile:false,
+
+  },
+  {
+    name: "Pokedex",
+    description:
+      "Se trata de una aplicación móvil desarrollada con React Native y Style Sheet que ofrece una interfaz interactiva para explorar diferentes tipos de Pokémon. La aplicación cuenta con una Pokédex que permite a los usuarios visualizar tarjetas con información detallada sobre cada Pokémon, incluyendo características específicas, habilidades y estadísticas. La aplicación ofrece una experiencia de usuario intuitiva y fácil de usar, que permite la navegación entre los diferentes tipos de Pokémon de forma fluida. ",
+    fotos: {
+      uno: cards,
+      dos: detailsBlue,
+      tres: detailsRed,
+    },
+    status: false,
+    mobile:true,
   },
 ];
