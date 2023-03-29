@@ -34,9 +34,13 @@ const Card = ({ data }) => {
         <h1 className="proyects__title_info">{data.name}</h1>
         <p className="proyects__description">{data.description}</p>
         <img src={logos.react} alt="" />
-        <img src={logos.sass} alt="" />
-        <img src={logos.html} alt="" />
-        <img src={logos.bootstrap} alt="" />
+        {!data.mobile && (
+          <>
+            <img src={logos.sass} alt="" />
+            <img src={logos.html} alt="" />
+            <img src={logos.bootstrap} alt="" />
+          </>
+        )}
       </div>
       <div className="proyects__container_images">
         <div className="proyects__btn_images_container">
