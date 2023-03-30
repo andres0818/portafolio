@@ -9,7 +9,7 @@
     }
 
     &__title {
-        font-weight: $font_family_bold;
+        font-weight: bold;
         font-size: 64px;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -72,7 +72,9 @@
     &__images_primary {
         width: 500px;
         height: 500px;
-        border-radius: 30px;
+        object-fit: contain;
+        border-radius: 30px !important;
+
 
         @media(max-width:500px) {
             width: 220px;
@@ -129,7 +131,7 @@
 
 
 .column {
-    @media(max-width: 500px) {
+    @media(max-width: 900px) {
         flex-direction: column-reverse;
 
     }
@@ -139,7 +141,7 @@
 .column_reverse {
     flex-direction: row-reverse;
 
-    @media(max-width: 500px) {
+    @media(max-width: 900px) {
         flex-direction: column-reverse;
     }
 }

@@ -3,5 +3,12 @@
   $background: #090916;
   $red_primary: #db1436;
   $purple_primary: rgba(139, 61, 255, .6);
-  $font_family: 'Source Code Pro' ;
   $font_family_bold: 'Source Code Pro' bold;
+
+
+  @font-face {
+    font-family: 'Source code Pro' !important;
+    font-weight: normal;
+    font-style: normal;
+    src: url('./components//Fonts/SourceCodePro-VariableFont_wght.ttf') format('ttf');
+  }
