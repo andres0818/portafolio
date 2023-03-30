@@ -70,6 +70,7 @@ const Card = ({ data }) => {
             alt="Portada"
           />
           <button onClick={nextImg} className="proyects__btn_images">
+            {'>'}
           </button>
         </div>
         <div className="proyects__images_secundary">
