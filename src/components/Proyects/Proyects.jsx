@@ -5,7 +5,7 @@ import "./Proyects.scss";
 
 const Proyects = () => {
   return (
-    <div className="proyects">
+    <div id="proyectos" className="proyects">
       <h1 className="proyects__title">Algunos proyectos</h1>
       {pages.map((page, index) => (
           <Card key={index} data={page} />

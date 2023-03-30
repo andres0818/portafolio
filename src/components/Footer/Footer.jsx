@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaGit } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import {
   css,
   html,
@@ -14,7 +14,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contactame">
       <div className="footer-contact">
         <h3>Contacto:</h3>
         <ul>

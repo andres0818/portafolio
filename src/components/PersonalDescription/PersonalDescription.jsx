@@ -4,7 +4,7 @@ import "./PersonalDescription.scss";
 
 const PersonalDescription = () => {
   return (
-    <div className="personalDescription ">
+    <div id="home" className="personalDescription ">
       <div className="personalDescription__info">
         <h1 className="personalDescription__title">¡Hola! soy Andrés Pérez</h1>
         <h2 className="personalDescription__subTitle">
