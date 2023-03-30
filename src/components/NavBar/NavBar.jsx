@@ -28,7 +28,7 @@ function Navbar() {
             href="#proyectos"
             onClick={(event) => scrollToSection(event, "proyectos")}
           >
-            Proyectos
+            Proyectos 
           </a>
         </li>
         <li className="navbar-item">

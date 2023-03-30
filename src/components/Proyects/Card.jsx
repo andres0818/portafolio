@@ -38,7 +38,7 @@ const Card = ({ data }) => {
       }
     >
       <div className="proyects__info">
-        <h1 className="proyects__title_info">{data.name}</h1>
+        <h1 className="proyects__title_info">{data.name }</h1>
         <p className="proyects__description">{data.description}</p>
         <div
           className="proyects__logos_languages"
@@ -70,7 +70,6 @@ const Card = ({ data }) => {
             alt="Portada"
           />
           <button onClick={nextImg} className="proyects__btn_images">
-            {">"}
           </button>
         </div>
         <div className="proyects__images_secundary">
@@ -78,7 +77,7 @@ const Card = ({ data }) => {
             onClick={() => onclickImg(images, 0)}
             className={imageWeb.img === images[0] ? "focus" : "opacity"}
             src={images[0]}
-            alt="Miniatura"
+            alt="Miniatura "
           />
           <img
             onClick={() => onclickImg(images, 1)}
