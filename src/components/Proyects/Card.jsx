@@ -40,14 +40,18 @@ const Card = ({ data }) => {
       <div className="proyects__info">
         <h1 className="proyects__title_info">{data.name}</h1>
         <p className="proyects__description">{data.description}</p>
-        <img src={logos.react} alt="" />
-        {!data.mobile && (
-          <>
-            <img src={logos.sass} alt="" />
-            <img src={logos.html} alt="" />
-            <img src={logos.bootstrap} alt="" />
-          </>
-        )}
+        <div
+          className="proyects__logos_languages"
+        >
+          <img src={logos.react} alt="" />
+          {!data.mobile && (
+            <>
+              <img src={logos.sass} alt="" />
+              <img src={logos.html} alt="" />
+              <img src={logos.bootstrap} alt="" />
+            </>
+          )}
+        </div>
 
         <div className="proyects__btn_redirect">
           <a href={data.url} target="_blank" rel="noreferrer">
