@@ -8,10 +8,11 @@ const Proyects = () => {
     <div className="proyects">
       <h1 className="proyects__title">Algunos proyectos</h1>
       {pages.map((page, index) => (
-        <Card key={index} data={page} />
+          <Card key={index} data={page} />
       ))}
     </div>
   );
 };
 
 export default Proyects;
+
