@@ -1,12 +1,12 @@
 import React from "react";
-import { profile } from "../../img";
+import { linkedin, profile } from "../../img";
 import "./PersonalDescription.scss";
 
 const PersonalDescription = () => {
   return (
     <div className="personalDescription ">
       <div className="personalDescription__info">
-        <h1 className="personalDescription__title">Hola! soy Andrés Pérez</h1>
+        <h1 className="personalDescription__title">¡Hola! soy Andrés Pérez</h1>
         <h2 className="personalDescription__subTitle">
           Desarrollador Front-End
         </h2>
@@ -26,9 +26,10 @@ const PersonalDescription = () => {
           href="https://www.linkedin.com/in/andres-perez0818/"
           target="_blank"
           rel="noreferrer"
-          className="btn personalDescription__moreInfoBtn"
+          className="personalDescription__moreInfoBtn"
         >
-          Contacto
+          <img src={linkedin} alt="Linkedin" />
+          Hablemos
         </a>
       </div>
       <img
