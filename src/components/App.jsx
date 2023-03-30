@@ -4,10 +4,12 @@ import Proyects from "./Proyects/Proyects";
 
 import "./App.scss";
 import Footer from "./Footer/Footer";
+import Navbar from "./NavBar/NavBar";
 
 const App = () => {
   return (
     <div className="app">
+      <Navbar />
       <PersonalDescription />
       <Proyects />
       <Footer />
